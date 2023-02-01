@@ -1,0 +1,1264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+}
+.nav{
+    flex: 1 1 auto;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;  
+}
+.logo{
+    flex: 1 1 40%;
+    padding-left: 20px;
+    height: 30px;
+    margin-left: 80px;
+}
+.logo img{
+    object-fit: cover;
+    height: inherit;
+}
+.bars{
+    display: none;
+}
+.nav_hidden{
+    display: none;
+}
+.fa-times_nav{
+    display: none;
+}
+.links{
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: white;
+}
+.links a:hover{
+    border-bottom: #FD7014 solid;
+}
+.link_free{
+    display: none;
+}
+.box_information{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    height: 100vh;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.404) 0%, rgba(0, 0, 0, 0.39) 100%), url(../img/header1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.personal_information{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.free_box{
+    flex: 1 1 50%;
+}
+.box_personal_information{
+    display: flex;
+    background-color: #171717;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; 
+}
+.box_personal_information2{
+    flex: 1 1 70%;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+}
+.career_information{
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 300;
+    padding-left: 30%;
+    padding-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+.name_information{
+    color: #FD7014;
+    font-size: 2.9rem;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-left: 30%;
+    padding-bottom: 10px;
+    letter-spacing: 3.5px;
+}
+.description_information{
+    color: #EEEEEE;
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 30%;
+    padding-right: 5px;
+    letter-spacing: .3px; 
+}
+.social_networks {
+    flex: 1 1 30%;
+    display: flex;
+    background-color: #171717;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30%;
+}
+.social_networks a{
+    font-size: 1.7rem;
+    color: #757575;
+    padding-right: 25px;
+}
+.social_networks a:hover{
+    color: #FD7014;
+}
+/*CAJA DE ACERCA*/
+.box_about{
+    display: flex;  
+    width: 100%; 
+    background-color: #FD7014;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.info_about{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 1%;
+}
+.info_photo{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_photo img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+.title_about{
+    color: #000000;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+.carrer_about{
+    color: #F4F4F4;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+    padding-bottom: 5px;
+}
+.description_about{
+    font-size: 1.1rem;
+    color: #171717;
+    letter-spacing: .3px;
+    font-weight: 300;
+}
+/*CAJA DE HERRAMIENTAS*/
+.box_skills{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+}
+.titles{
+    flex: 1 1 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.titles h2{
+    font-size: 1.9rem;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+}
+.skills{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+.skills i{
+    color: #000000;
+    font-size: 2.1rem;
+    padding-bottom: 5px;
+}
+.title_skill{
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: .2px;
+    color: #FD7014;
+    padding-bottom: 2.5px;
+}
+.title_skill p{
+    font-size: 1rem;
+}
+/*CAJA DE EDUCACION*/
+.box_education{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.404) 0%, rgba(0, 0, 0, 0.39) 100%), url(../img/pc-g0151644af_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.info_edu{
+    flex: 1 1 50%;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.free_box_edu{
+    flex: 1 1 50%;
+}
+.information_edu_title{
+    color: #EEEEEE;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.information_edu_title h2{
+    font-weight: 300;
+    letter-spacing: .2rem;
+    font-size: 1.9rem;
+}
+.information_edu_secondbox{
+    color: #ffffff;
+    margin-left: 15%;
+    margin-right: 5%;
+    border-left: #ffffff 1px solid;
+    padding-left: 15px; 
+}
+.information_edu_secondbox h2{
+    font-size: 1.4rem;
+    color: #EEEEEE;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    padding-bottom: 4px;
+}
+.information_edu_secondbox h3{
+    font-size: 1.1rem;
+    color: #757575;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+.information_edu_secondbox h4{
+    font-weight: 300;
+}
+/*CAJA DE PORTAFOLIO*/
+.container_gallery{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.title_gallery{
+    flex: 1 1 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+.title_gallery h2{
+    font-size: 1.9rem;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+}
+.gallery{
+    flex: 1 1 50%;
+    padding: 0 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gallery img{
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+    margin-top: 8px; 
+}
+.gallery2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.gallery2 p{
+    font-size: 1rem;
+}
+.button_gallery{
+    background-color: #FD7014;
+    border: none;
+	padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.gallery_text{
+    display: none;
+}
+.gallery_text_show{
+    display: contents;
+}
+.link_gallery{
+    font-size: 1rem;
+    color: #FD7014;
+    text-decoration: none;
+}
+.button_gallery a{
+    font-size: .9rem;
+    text-decoration: none;
+    color: #F4F4F4;
+}
+/*galeria*/
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.columna{
+    flex: 20%;
+    padding: 0 4px;
+}
+.columna img{
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.title__gal{
+    flex: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.title__gal h2{
+    font-size: 1.9rem;
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+}
+.title_work{
+    flex: 100%;
+}
+.title_work h3{
+    font-weight: 300;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+.title_work_desing{
+    flex: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.title_work_desing h3{
+    font-weight: 300;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    padding-left: 35px;
+}
+/*ventana modal*/
+.container_img{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(31, 29, 29, 0.808);  
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-140%);
+    transition: transform .4s ease-in;
+    flex-direction: column;
+}
+.move{
+    transform: translateX(0);
+}
+.img_show{
+    width: 95%;
+    height: 75%;
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    
+}
+.copy{
+    display: fixed;
+    color: #EEEEEE;
+    bottom: 40px;
+    width: 50%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.modal_visit{
+    display: fixed;
+    color: #EEEEEE;
+    bottom: 10px;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    background-color: #171717;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.modal_visit a{
+    text-decoration: none;
+    color: #F4F4F4;
+    font-size: 1rem;
+}
+.fa-times-circle{
+    position: absolute;
+    color: #ffffff;
+    top: 20px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+/*CAJA DE EXPERIENCIA*/
+.box_experience{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.404) 0%, rgba(0, 0, 0, 0.39) 100%), url(../img/office-594119_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+}
+.experience_information{
+    flex: 1 1 50%;
+    background-color: #171717;
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.experience_information h2{
+    font-weight: 300;
+    letter-spacing: .2rem;
+    font-size: 1.9rem;
+    color: #ffffff;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.experience_information p{
+    margin-left: 15%;
+    margin-right: 5%;
+    color: #757575;
+    font-weight: 400;
+    padding-bottom: 4px;
+    font-size: 1.1rem;
+}
+.experiencia_free{
+    flex: 1 1 50%;
+}
+/*CAJA DE CONTACTO*/
+.box_contact{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    background-color: #222;
+}
+.title_contact{
+    flex: 1 1 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.title_contact h2{
+    font-size: 1.9rem;
+    color: #EEEEEE;
+    text-align: center;
+    font-weight: 400;
+}
+.formcv{
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;   
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.form_name{
+    flex: 1 1 50%;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+input{
+    font-size: .9rem ;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+}
+.form_name input{
+    width: 100%;
+    height: 35px;
+    color: #EEEEEE;
+}
+input:hover{
+    color: #EEEEEE;
+}
+.form_lastname{
+    flex: 1 1 50%;   
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+.form_lastname input{
+    width: 100%;
+    height: 35px;
+    color: #EEEEEE;
+}
+.form_email{
+    flex: 1 1 100%;   
+    padding-bottom: 25px;
+}
+.form_email input{
+    width: 100%;
+    padding-left: 10px;
+    height: 35px;
+    color: #EEEEEE;
+}
+.form_matter{
+    flex: 1 1 100%; 
+    padding-bottom: 20px;
+}
+.form_matter textarea{
+    width: 100%;
+    overflow: auto;
+    resize: vertical;
+    font-size: 1rem ;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    padding-top: 2px;
+    height: 200px;
+    background-color: #333;
+    border: none;
+    border-radius: 3px;
+    color: #EEEEEE;
+}
+.form_matter textarea:hover{
+    color: #EEEEEE;
+}
+.form_button{
+    flex: 1 1 100%; 
+    text-align: end;
+}
+.form_button button{
+    background-color: #FD7014;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #EEEEEE;
+    font-size: .9rem ;
+    font-family: 'Poppins', sans-serif;
+    
+}
+/*CAJA DE FOOTER*/
+.box_footer{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.footer_description{
+    flex: 1 1 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_description p{
+    color: #757575;
+}
+.social_networks_footer{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.social_networks_footer a{
+    text-decoration: none;
+    color: #757575;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    padding-right: 20px;
+}
+.nav_footer{
+    flex: 1 1 30%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 5px;
+    padding-left: 40px;
+}
+.nav_footer a{
+    text-decoration: none;
+    color: #757575;
+}
+
+@media (max-width: 991.98px) {
+    .nav{
+        background-color: #171717;
+    }
+    .bars{
+        display: flex;
+        padding-right: 40px;
+    }
+    .fa-bars{
+        display: block;
+        color: #757575;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .nav_hidden{
+        display: flex;
+        top: 0px;
+        right: 100%;
+        width: 100%;
+        position: fixed;
+        background-color: #171717;
+        height: 60px;
+        justify-content: flex-end;
+        padding-right: 40px;
+        align-items: center;
+    }
+    .nav_hidden_show{
+        right: 0px;
+    }
+    .fa-times_nav{
+        display: block;
+        font-size: 34px;
+        color: #757575;
+    }
+    
+    .links{
+        position: fixed;
+        top: 60px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #131313;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 75%;
+        padding-top: 60px; 
+        transform: translateX(200%);
+        transition: transform .5s ease-in-out;
+    }
+    .links_free{
+        position: fixed;
+        top: 60px;
+        display: flex;
+        width: 0%;
+        left: 0;
+        height: 100vh;
+    }
+    .links_free_show{
+        width: 20%;
+    }
+    .links_show{
+        right: 0px;
+        transform: translateX(20%);
+        width: 100%;
+    }
+    .links a{
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 1.4rem;
+        padding-left: 40px;
+    }
+    .links a:nth-child(even){
+        background-color: #171717;
+    }
+    .career_information{
+        padding-left: 50px;
+    }
+    .name_information{
+        padding-left: 50px;
+    }
+    .description_information{
+        padding-left: 50px;
+    }
+    .box_personal_information{
+        background: none;
+    }
+    .box_personal_information2{
+        flex: 1 1 70%;
+        background: none;
+    }
+    .social_networks {
+        background: none;
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 30%;
+        padding-left: 50px;
+    }
+    .box_about{
+        height: auto;
+        padding-bottom: 25px;
+        padding-top: 20px;
+    }
+    .box_about{
+        flex-direction: column;
+    }
+    .info_photo img{
+        width: 380px;
+        height: auto;
+        object-fit: cover;
+    }
+    .box_skills{
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .titles{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-bottom: 50px;
+        padding-top: 5px;
+    }
+    .skills{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 45px;
+        padding-top: 45px;
+    }
+    .box_education{
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .info_edu{
+        flex: 1 1 65%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .information_edu_title{
+        padding-bottom: 80px;
+    }
+    .information_edu_secondbox{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .free_box_edu{
+        flex: 1 1 35%;
+    }
+   .galeria{
+    padding: 0px 0px;
+   }
+    .title__gal {
+        flex: 100%;
+        margin-top: 0px;
+        margin-bottom: auto;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .box_experience{
+        height: auto;
+        margin-top: 15px;
+
+    }
+    .experience_information{
+        flex: 1 1 65%;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .experiencia_free{
+        flex: 1 1 35%;
+    }
+    .experience_information p{
+        margin-left: 15%;
+        margin-right: 10%;
+        color: #757575;
+        font-weight: 400;
+        padding-bottom: 4px;
+        font-size: 1.1rem;
+        padding-top: 50px;
+    }
+    .columna{
+        flex: 50%;
+        padding: 0 4px;
+    }
+    .formcv{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .box_footer{
+        height: auto;
+        
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .footer_description{
+       padding-bottom: 30px;
+       padding-top: 30px;
+    }
+    .social_networks_footer{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 767.98px) {
+
+    
+}
+@media (max-width: 575.98px) {
+    .nav{
+        height: 50px;
+    }
+    .nav_hidden{
+        height: 50px;
+    }
+    .links{
+        top: 50px;
+    }
+    .box_information{
+        background-image:linear-gradient(to right, rgba(0, 0, 0, 0.700) 0%, rgba(0, 0, 0, 0.700) 100%), url(../img/header1.jpg);
+    }
+    .box_personal_information2{
+        flex: 1 1 70%;
+    }
+    .social_networks {
+        flex: 1 1 30%;
+    }
+    .links a{
+        font-size: .9rem;
+    }
+    .personal_information{
+        flex: 1 1 100%;
+    }
+    .free_box{
+        flex: 1 1 0%;
+    }
+    .career_information{
+        padding-left: 20px;
+        font-size: 1.6rem;
+    }
+    .name_information{
+        padding-left: 20px;
+        white-space: normal;
+        font-size: 1.8rem;
+    }
+    .description_information{
+        padding-left: 20px;
+    }
+    .info_about{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .info_photo img{
+        width: 260px;
+        height: auto;
+        object-fit: cover;
+    }
+    .box_about{
+        padding-top: 20px;
+    }
+    .title_about{
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        padding-bottom: 5px;
+    }
+    .carrer_about{
+        color: #F4F4F4;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        padding-bottom: 10px;
+    }
+    .description_about{
+        font-size: 1rem;
+        color: #171717;
+        letter-spacing: .3px;
+        font-weight: 300;
+        padding-bottom: 15px;
+    }
+    .box_skills{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 0px;
+
+    }
+    .skills{
+        flex: 1 1 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .titles{
+        padding-bottom: 10px;
+    }
+    .titles h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        padding-bottom: 10px;
+    }
+    .box_education {
+        margin-bottom: 30px;
+    }
+    .information_edu_title {
+        padding-bottom: 10px;
+    }
+    .information_edu_title h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        padding-bottom: 30px;
+    }
+    .info_edu {
+        flex: 1 1 65%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .information_edu_title{
+        margin-left: 5%;
+    }
+    .information_edu_secondbox{
+        margin-left: 5%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .information_edu_secondbox h2{
+        font-size: 1.2rem;
+        color: #EEEEEE;
+        font-weight: 300;
+        letter-spacing: .2rem;
+        padding-bottom: 4px;
+    }
+    .gallery{
+        flex: 1 1 100%;
+    }
+    .gallery img{
+        height: 180px;
+    }
+    .columna{
+        flex: 50%;
+        padding: 0 4px;
+    }
+    .title__gal h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+    }
+
+    .title_work h3{
+        font-size: 1.1rem;
+        padding-left: 20px;
+    }
+    .title_work_desing h3{
+        font-size: 1.1rem;
+        padding-left: 20px;
+    }
+    .box_experience{
+        height: 70vh;
+    }
+    .experience_information{
+        flex: 1 1 100%;
+        height: 70vh;
+    }
+    .experience_information h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .experiencia_free{
+        flex: 1 1 0%;
+    }
+    .experience_information p{
+        margin-left: 5%;
+        margin-right: 5%;
+        color: #757575;
+        font-weight: 400;
+        padding-bottom: 4px;
+        font-size: 1rem;
+    }
+    .title_contact h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: .5px;
+    }
+    .formcv{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .form_name{
+        flex: 1 1 100%;
+        padding-right: 0px;
+    }
+    .form_lastname{
+        flex: 1 1 100%;
+        padding-left: 0px;
+    }
+    .form_button button{
+        background-color: #FD7014;
+        padding: 5px 20px;
+    }
+    .footer_description{
+        flex: 1 1 100%;
+    }
+    .nav_footer{
+        flex: 1 1 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 5px;
+        padding-left: 0px;
+    }
+    /*ventana modal*/
+    
+    
+}
+@media (max-width: 320px) {
+    .nav{
+        height: 40px;
+    }
+    .fa-bars{
+        font-size: 20px;
+    }
+    .nav_hidden{
+        height: 40px;
+    }
+    .fa-times_nav{
+        font-size: 22px;
+    }
+    .box_personal_information2{
+        flex: 1 1 80%;
+    }
+    .social_networks {
+        flex: 1 1 20%;
+        padding-left: 30px;
+    }
+   
+    .links{
+        top: 40px;
+        padding-top: 0px; 
+    }
+    .links a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: .9rem;
+    }
+    .career_information{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.2rem;
+    }
+    .name_information{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 1.3rem;
+    }
+    .description_information{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: .9rem;
+    }
+    .social_networks a{
+        font-size: 1.3rem;
+    }
+    .info_photo img{
+        width: 220px;
+    }
+    
+    .info_about{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .title_about{
+        font-size: 1.4rem;
+        letter-spacing: .2px;
+       
+    }
+    .carrer_about{
+        font-size: 1.2rem;
+        letter-spacing: .2px;
+    }
+    .description_about{
+        letter-spacing: .1px;
+    }
+    .box_skills{
+        height: 120vh;
+        padding-top: 30px;
+    }
+    .titles h2{
+        font-size: 1.4rem;
+    }
+    .information_edu_title h2{
+        font-size: 1.4rem;
+    }
+    .skills i{
+        font-size: 1.8rem;
+    }
+    .title_skill{
+        font-size: 1rem;
+
+    }
+    .title_skill p{
+        font-size: .9rem;
+    }
+    .box_education{
+        height: 110vh;
+    }
+    .info_edu{
+        flex: 1 1 100%;
+    }
+    .free_box_edu{
+        flex: 1 1 0%;
+    }
+    .columna{
+        flex: 50%;
+        padding: 0 4px;
+    }
+    .title__gal h2{
+        font-size: 1.4rem;
+        letter-spacing: .2px;
+    }
+    .title_work h3{
+        font-size: 1.1rem;
+        padding-left: 10px;
+    }
+    .title_work_desing h3{
+        font-size: 1.1rem;
+        padding-left: 10px;
+    }
+    .box_experience{
+        height: 120vh;
+    }
+    .experience_information{
+        height: 120vh;
+    }
+    .experience_information h2{
+        font-size: 1.4rem;
+        letter-spacing: .2px;
+    }
+    .experience_information p{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: .9;
+    }
+    .box_footer{
+        height: auto;
+    }
+    /*ventana modal*/
+    
+}
+@keyframes ldio-l0mrciievz {
+    0% { transform: translate(-50%,-50%) rotate(0deg); }
+    100% { transform: translate(-50%,-50%) rotate(360deg); }
+  }
+  .ldio-l0mrciievz div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 10px solid #757575;
+    border-top-color: transparent;
+    border-radius: 50%;
+  }
+  .ldio-l0mrciievz div {
+    animation: ldio-l0mrciievz 2.1739130434782608s linear infinite;
+    top: 50px;
+    left: 50px
+  }
+  .loadingio-spinner-rolling-4zwnhwohbj {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    background: #171717;
+  }
+  .ldio-l0mrciievz {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(0.7);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-l0mrciievz div { box-sizing: content-box; }
+  /* generated by https://loading.io/ */
+
+  /* generated by https://loading.io/ */
+  
+  
+  
